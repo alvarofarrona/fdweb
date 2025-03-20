@@ -1,58 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pagina web</title>
+    <title>Mi Página Web</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/favicon 2.png"
+      sizes="32x32"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="navigation.css" />
+    <link rel="stylesheet" href="main.css" />
+
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f0f4f8; /* Fondo claro, elegante */
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1,
+      h2 {
+        font-family: "Roboto", sans-serif;
+        color: #1e3a8a; /* Azul oscuro */
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: #555;
+        line-height: 1.8;
+      }
+
+      .contenedor img {
+        max-width: 80%; /* Limitar el tamaño de la imagen */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Estilo para el header */
+      header {
+        background-color: #fff; /* Fondo blanco */
+        padding: 40px 10%;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      header .logo h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #4caf50; /* Verde suave */
+      }
+
+      /* Estilo para el menú de navegación */
+      nav {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline-block;
+        margin: 0 20px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #2196f3; /* Azul brillante */
+        font-size: 1.2rem;
+        font-weight: 600;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        color: #ffeb3b; /* Amarillo brillante al hacer hover */
+        transform: translateY(-5px);
+      }
+
+      /* Estilo para el main */
+      main {
+        padding: 40px 10%;
+      }
+
+      /* Títulos "Mi Página Web" y subtítulo "Inicio y Contacto" */
+      .title-section h1,
+      .title-section h2 {
+        color: #4caf50; /* Verde brillante */
+      }
+
+      /* Sección "Sobre la Página Web" */
+      .about-section {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      h2.about-title {
+        color: #4caf50; /* Verde brillante */
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #2196f3;
+        color: white;
+        padding: 25px;
+        text-align: center;
+      }
+
+      footer p {
+        font-size: 1rem;
+      }
+
+      /* Media Queries */
+      @media (max-width: 768px) {
+        header {
+          padding: 20px;
+        }
+
+        main {
+          padding: 20px;
+        }
+
+        .contenedor {
+          flex-direction: column;
+        }
+
+        .item {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
   </head>
-  <meta
-    name="description"
-    content="Aprende HTML y desarrollo web con las mejores prácticas."
-  />
-  <meta
-    name="keywords"
-    content="HTML, CSS, desarrollo web, SEO, accesibilidad"
-  />
-  <meta name="author" content="Tu Nombre" />
-  <meta name="robots" content="index, follow" />
+
   <body>
-    <body>
-      <header>
+    <header>
+      <div class="logo">
         <h1>Mi Página Web</h1>
-        <nav>
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Productos</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <main>
-        <section>
-          <h2>Sobre Nosotros</h2>
-          <p>Bienvenido a nuestra página.</p>
-          <p></p>
-        </section>
-        <img
-          src="./assets/images/images.jpg"
-          alt="Imagen externa"
-          width="300"
-          height="200"
-          controls
-        />
+    <main>
+      <section class="about-section">
+        <h2 class="about-title">Sobre la Página Web</h2>
+        <p>
+          Bienvenido a nuestra página. Nos encanta ofrecerte contenido
+          interesante y útil. Aquí apredneras a como crear una web desde0.
+        </p>
+      </section>
 
-        <source
-          src="assets/video/223253_small.mp4"
-          type="video/mp4"
-          width="300"
-        />
-      </main>
-      <footer>
-        <p>&copy; 2025 Mi Web</p>
-      </footer>
-    </body>
+      <div class="contenedor">
+        <div class="item">
+          <img src="assets/images/images.jpg" alt="Imagen externa" />
+        </div>
+      </div>
+    </main>
 
-    <p>estoy muy feliz.</p>
-    <p>hola</p>
+    <footer>
+      <p>&copy; 2025 Mi Página Web</p>
+    </footer>
   </body>
 </html>
