@@ -1,2 +1,3 @@
-@import url(meyerweb.com/eric/tools/css/reset/reset.css);
-@import url(main.css);
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+@import "./theme.css";
+@import "./main.css";

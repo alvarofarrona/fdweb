@@ -1,22 +1,35 @@
-/* Reset de márgenes y padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Estilos generales para el body */
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f0f4f8;
+  background-color: #f0f4f8; /* Fondo claro, elegante */
   color: #333;
-  line-height: 1.6;
-  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
-/* Estilo para el encabezado */
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
+  color: #1e3a8a; /* Azul oscuro */
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.contenedor img {
+  max-width: 80%; /* Limitar el tamaño de la imagen */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el header */
 header {
-  background-color: #fff;
+  background-color: #fff; /* Fondo blanco */
   padding: 40px 10%;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -29,10 +42,14 @@ header .logo h1 {
 }
 
 /* Estilo para el menú de navegación */
+nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
-  margin-top: 20px;
 }
 
 nav ul li {
@@ -42,57 +59,38 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #2196f3;
+  color: #2196f3; /* Azul brillante */
   font-size: 1.2rem;
   font-weight: 600;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #ffeb3b;
+  color: #ffeb3b; /* Amarillo brillante al hacer hover */
   transform: translateY(-5px);
 }
 
-/* Estilo principal */
+/* Estilo para el main */
 main {
   padding: 40px 10%;
 }
 
-/* Estilo para las secciones */
+/* Títulos "Mi Página Web" y subtítulo "Inicio y Contacto" */
+.title-section h1,
+.title-section h2 {
+  color: #4caf50; /* Verde brillante */
+}
+
+/* Sección "Sobre la Página Web" */
 .about-section {
   text-align: center;
   margin-top: 30px;
 }
 
-h2 {
+h2.about-title {
+  color: #4caf50; /* Verde brillante */
   font-size: 2rem;
-  color: #4caf50;
   margin-bottom: 20px;
-}
-
-.contenedor {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.item {
-  background-color: #f5f5f5;
-  border: 1px solid #ffcc80;
-  border-radius: 5px;
-  padding: 10px;
-  width: 48%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.item img {
-  max-width: 80%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
