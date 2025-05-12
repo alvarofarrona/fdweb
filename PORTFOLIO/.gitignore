@@ -1,0 +1,5 @@
+# Ignorar archivos de sistema
+.DS_Store
+
+# Ignorar todos los videos dentro de la carpeta assets/videos/
+assets/videos/*
